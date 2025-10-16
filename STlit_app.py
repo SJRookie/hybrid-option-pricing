@@ -103,7 +103,7 @@ with st.sidebar:
 # Collect all current parameters for hashing
 current_params = {
     'asset_type': asset_type, 'K': K, 'Days_to_expiry': Days_to_expiry, 'r': r, 
-    'sigma': sigma, 'call_market': call_market, 'put_market': put_market, 
+    'sigma_user': sigma, 'call_market': call_market, 'put_market': put_market, 
     'PCR_Ratio': PCR_Ratio, 'F_or_S': F_or_S, 'q': q
 }
 current_hash = get_input_hash(current_params)
@@ -306,4 +306,5 @@ st.markdown("""
     <p>Built with ❤️ using Streamlit | Hybrid Option Pricing Model v2.1 (Robust)</p>
     <p>⚠️ For educational purposes only. Not financial advice.</p>
 </div>
+
 """, unsafe_allow_html=True)
